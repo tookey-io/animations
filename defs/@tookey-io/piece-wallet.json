@@ -1,0 +1,73 @@
+{
+    "directoryName": "tookey-wallet",
+    "displayName": "Tookey Wallets",
+    "tags": [
+        "tookey",
+        "web3"
+    ],
+    "logoUrl": "https://raw.githubusercontent.com/tookey-io/icons/main/piece-wallet.png",
+    "actions": {
+        "fetch-keys": {
+            "name": "fetch-keys",
+            "displayName": "Get all keys",
+            "description": "Returns list of all available keys",
+            "props": {},
+            "requireAuth": true
+        },
+        "sign-request": {
+            "name": "sign-request",
+            "displayName": "Sign Transaction Request",
+            "description": "Send request on signing transaction",
+            "props": {
+                "wallet": {
+                    "displayName": "Wallet",
+                    "description": "Wallet to sign hash",
+                    "required": true,
+                    "refreshers": [],
+                    "type": "DROPDOWN"
+                },
+                "signer": {
+                    "displayName": "Signer",
+                    "description": "Signer instance",
+                    "required": true,
+                    "refreshers": [
+                        "wallet"
+                    ],
+                    "type": "DROPDOWN"
+                },
+                "tx": {
+                    "displayName": "Transaction",
+                    "description": "Transaction to sign",
+                    "required": true,
+                    "type": "OBJECT"
+                }
+            },
+            "requireAuth": true
+        }
+    },
+    "triggers": {},
+    "description": "Tookey Wallets",
+    "auth": {
+        "description": "\n  To obtain your Tookey token, follow these steps:\n\n  1. Open your telegram bot or official https://t.me/tookey_bot\n  2. Send `/auth` command to the bot\n  3. Click on the auth in authomation button\n",
+        "required": true,
+        "props": {
+            "token": {
+                "displayName": "Token",
+                "description": "The token of the APITable account",
+                "required": true,
+                "type": "SECRET_TEXT"
+            },
+            "backendUrl": {
+                "displayName": "Tookey Backend Url",
+                "description": "The url of the tookey infrastructure instance",
+                "required": true,
+                "type": "SHORT_TEXT"
+            }
+        },
+        "type": "CUSTOM_AUTH",
+        "displayName": "Connection"
+    },
+    "minimumSupportedRelease": "0.5.0",
+    "name": "@tookey-io/piece-wallet",
+    "version": "0.0.6"
+}

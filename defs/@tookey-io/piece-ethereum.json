@@ -1,0 +1,2036 @@
+{
+    "directoryName": "ethereum",
+    "displayName": "Ethereum",
+    "tags": [],
+    "logoUrl": "https://raw.githubusercontent.com/tookey-io/icons/main/piece-ethereum.png",
+    "actions": {
+        "getNetwork": {
+            "name": "getNetwork",
+            "displayName": "Get Network",
+            "description": "Returns the network data based on selected chain id",
+            "props": {
+                "chain": {
+                    "displayName": "Chain",
+                    "description": "Chain to use",
+                    "required": true,
+                    "options": {
+                        "disabled": false,
+                        "options": [
+                            {
+                                "value": 1,
+                                "label": "Ethereum"
+                            },
+                            {
+                                "value": 5,
+                                "label": "Goerli"
+                            },
+                            {
+                                "value": 10,
+                                "label": "OP Mainnet"
+                            },
+                            {
+                                "value": 14,
+                                "label": "Flare Mainnet"
+                            },
+                            {
+                                "value": 16,
+                                "label": "Coston"
+                            },
+                            {
+                                "value": 19,
+                                "label": "Songbird Mainnet"
+                            },
+                            {
+                                "value": 25,
+                                "label": "Cronos"
+                            },
+                            {
+                                "value": 40,
+                                "label": "Telos"
+                            },
+                            {
+                                "value": 41,
+                                "label": "Telos"
+                            },
+                            {
+                                "value": 50,
+                                "label": "XinFin Network"
+                            },
+                            {
+                                "value": 51,
+                                "label": "Apothem Network"
+                            },
+                            {
+                                "value": 56,
+                                "label": "BNB Smart Chain"
+                            },
+                            {
+                                "value": 57,
+                                "label": "Syscoin Mainnet"
+                            },
+                            {
+                                "value": 66,
+                                "label": "OKC"
+                            },
+                            {
+                                "value": 97,
+                                "label": "Binance Smart Chain Testnet"
+                            },
+                            {
+                                "value": 100,
+                                "label": "Gnosis"
+                            },
+                            {
+                                "value": 114,
+                                "label": "Coston2"
+                            },
+                            {
+                                "value": 137,
+                                "label": "Polygon"
+                            },
+                            {
+                                "value": 250,
+                                "label": "Fantom"
+                            },
+                            {
+                                "value": 280,
+                                "label": "zkSync Era Testnet"
+                            },
+                            {
+                                "value": 288,
+                                "label": "Boba Network"
+                            },
+                            {
+                                "value": 314,
+                                "label": "Filecoin Mainnet"
+                            },
+                            {
+                                "value": 324,
+                                "label": "zkSync Era"
+                            },
+                            {
+                                "value": 369,
+                                "label": "PulseChain"
+                            },
+                            {
+                                "value": 420,
+                                "label": "Optimism Goerli"
+                            },
+                            {
+                                "value": 599,
+                                "label": "Metis Goerli"
+                            },
+                            {
+                                "value": 841,
+                                "label": "Taraxa Mainnet"
+                            },
+                            {
+                                "value": 842,
+                                "label": "Taraxa Testnet"
+                            },
+                            {
+                                "value": 888,
+                                "label": "Wanchain"
+                            },
+                            {
+                                "value": 943,
+                                "label": "PulseChain V4"
+                            },
+                            {
+                                "value": 997,
+                                "label": "5ireChain Thunder Testnet"
+                            },
+                            {
+                                "value": 999,
+                                "label": "Zora Goerli Testnet"
+                            },
+                            {
+                                "value": 1038,
+                                "label": "Bronos Testnet"
+                            },
+                            {
+                                "value": 1039,
+                                "label": "Bronos"
+                            },
+                            {
+                                "value": 1088,
+                                "label": "Metis"
+                            },
+                            {
+                                "value": 1101,
+                                "label": "Polygon zkEVM"
+                            },
+                            {
+                                "value": 1284,
+                                "label": "Moonbeam"
+                            },
+                            {
+                                "value": 1285,
+                                "label": "Moonriver"
+                            },
+                            {
+                                "value": 1287,
+                                "label": "Moonbase Alpha"
+                            },
+                            {
+                                "value": 1337,
+                                "label": "Localhost"
+                            },
+                            {
+                                "value": 1442,
+                                "label": "Polygon zkEVM Testnet"
+                            },
+                            {
+                                "value": 2000,
+                                "label": "Dogechain"
+                            },
+                            {
+                                "value": 3141,
+                                "label": "Filecoin Hyperspace"
+                            },
+                            {
+                                "value": 3737,
+                                "label": "Crossbell"
+                            },
+                            {
+                                "value": 4002,
+                                "label": "Fantom Testnet"
+                            },
+                            {
+                                "value": 4242,
+                                "label": "Nexi"
+                            },
+                            {
+                                "value": 4689,
+                                "label": "IoTeX"
+                            },
+                            {
+                                "value": 4690,
+                                "label": "IoTeX Testnet"
+                            },
+                            {
+                                "value": 7700,
+                                "label": "Canto"
+                            },
+                            {
+                                "value": 8082,
+                                "label": "Shardeum Sphinx"
+                            },
+                            {
+                                "value": 8217,
+                                "label": "Klaytn"
+                            },
+                            {
+                                "value": 9000,
+                                "label": "Evmos Testnet"
+                            },
+                            {
+                                "value": 9001,
+                                "label": "Evmos"
+                            },
+                            {
+                                "value": 10200,
+                                "label": "Gnosis Chiado"
+                            },
+                            {
+                                "value": 11235,
+                                "label": "HAQQ Mainnet"
+                            },
+                            {
+                                "value": 17323,
+                                "label": "Cannoli"
+                            },
+                            {
+                                "value": 31337,
+                                "label": "Hardhat"
+                            },
+                            {
+                                "value": 42161,
+                                "label": "Arbitrum One"
+                            },
+                            {
+                                "value": 42220,
+                                "label": "Celo"
+                            },
+                            {
+                                "value": 43113,
+                                "label": "Avalanche Fuji"
+                            },
+                            {
+                                "value": 43114,
+                                "label": "Avalanche"
+                            },
+                            {
+                                "value": 44787,
+                                "label": "Alfajores"
+                            },
+                            {
+                                "value": 53935,
+                                "label": "DFK Chain"
+                            },
+                            {
+                                "value": 54211,
+                                "label": "HAQQ Testedge 2"
+                            },
+                            {
+                                "value": 59140,
+                                "label": "Linea Goerli Testnet"
+                            },
+                            {
+                                "value": 80001,
+                                "label": "Polygon Mumbai"
+                            },
+                            {
+                                "value": 84531,
+                                "label": "Base Goerli"
+                            },
+                            {
+                                "value": 314159,
+                                "label": "Filecoin Calibration"
+                            },
+                            {
+                                "value": 421613,
+                                "label": "Arbitrum Goerli"
+                            },
+                            {
+                                "value": 534353,
+                                "label": "Scroll Testnet"
+                            },
+                            {
+                                "value": 1337803,
+                                "label": "Zhejiang"
+                            },
+                            {
+                                "value": 7777777,
+                                "label": "Zora"
+                            },
+                            {
+                                "value": 11155111,
+                                "label": "Sepolia"
+                            },
+                            {
+                                "value": 278611351,
+                                "label": "SKALE | Razor Network"
+                            },
+                            {
+                                "value": 344106930,
+                                "label": "SKALE | Calypso NFT Hub Testnet"
+                            },
+                            {
+                                "value": 391845894,
+                                "label": "SKALE | Block Brawlers"
+                            },
+                            {
+                                "value": 476158412,
+                                "label": "SKALE | Europa Liquidity Hub Testnet"
+                            },
+                            {
+                                "value": 503129905,
+                                "label": "SKALE | Nebula Gaming Hub Testnet"
+                            },
+                            {
+                                "value": 1026062157,
+                                "label": "SKALE | CryptoBlades"
+                            },
+                            {
+                                "value": 1273227453,
+                                "label": "SKALE | Human Protocol"
+                            },
+                            {
+                                "value": 1313161554,
+                                "label": "Aurora"
+                            },
+                            {
+                                "value": 1313161555,
+                                "label": "Aurora Testnet"
+                            },
+                            {
+                                "value": 1350216234,
+                                "label": "SKALE | Titan Community Hub"
+                            },
+                            {
+                                "value": 1351057110,
+                                "label": "SKALE | Chaos Testnet"
+                            },
+                            {
+                                "value": 1482601649,
+                                "label": "SKALE | Nebula Gaming Hub"
+                            },
+                            {
+                                "value": 1517929550,
+                                "label": "SKALE | Titan Community Hub Testnet"
+                            },
+                            {
+                                "value": 1564830818,
+                                "label": "SKALE | Calypso NFT Hub"
+                            },
+                            {
+                                "value": 1666600000,
+                                "label": "Harmony One"
+                            },
+                            {
+                                "value": 2046399126,
+                                "label": "SKALE | Europa Liquidity Hub"
+                            },
+                            {
+                                "value": 2139927552,
+                                "label": "SKALE | Exorde"
+                            }
+                        ]
+                    },
+                    "type": "STATIC_DROPDOWN"
+                },
+                "network": {
+                    "displayName": "Network",
+                    "description": "Network data override",
+                    "required": false,
+                    "type": "OBJECT"
+                }
+            },
+            "requireAuth": true
+        },
+        "sendNative": {
+            "name": "sendNative",
+            "displayName": "Send Native",
+            "description": "Send native assets to another address",
+            "props": {
+                "chain": {
+                    "displayName": "Chain",
+                    "description": "Chain to use",
+                    "required": true,
+                    "options": {
+                        "disabled": false,
+                        "options": [
+                            {
+                                "value": 1,
+                                "label": "Ethereum"
+                            },
+                            {
+                                "value": 5,
+                                "label": "Goerli"
+                            },
+                            {
+                                "value": 10,
+                                "label": "OP Mainnet"
+                            },
+                            {
+                                "value": 14,
+                                "label": "Flare Mainnet"
+                            },
+                            {
+                                "value": 16,
+                                "label": "Coston"
+                            },
+                            {
+                                "value": 19,
+                                "label": "Songbird Mainnet"
+                            },
+                            {
+                                "value": 25,
+                                "label": "Cronos"
+                            },
+                            {
+                                "value": 40,
+                                "label": "Telos"
+                            },
+                            {
+                                "value": 41,
+                                "label": "Telos"
+                            },
+                            {
+                                "value": 50,
+                                "label": "XinFin Network"
+                            },
+                            {
+                                "value": 51,
+                                "label": "Apothem Network"
+                            },
+                            {
+                                "value": 56,
+                                "label": "BNB Smart Chain"
+                            },
+                            {
+                                "value": 57,
+                                "label": "Syscoin Mainnet"
+                            },
+                            {
+                                "value": 66,
+                                "label": "OKC"
+                            },
+                            {
+                                "value": 97,
+                                "label": "Binance Smart Chain Testnet"
+                            },
+                            {
+                                "value": 100,
+                                "label": "Gnosis"
+                            },
+                            {
+                                "value": 114,
+                                "label": "Coston2"
+                            },
+                            {
+                                "value": 137,
+                                "label": "Polygon"
+                            },
+                            {
+                                "value": 250,
+                                "label": "Fantom"
+                            },
+                            {
+                                "value": 280,
+                                "label": "zkSync Era Testnet"
+                            },
+                            {
+                                "value": 288,
+                                "label": "Boba Network"
+                            },
+                            {
+                                "value": 314,
+                                "label": "Filecoin Mainnet"
+                            },
+                            {
+                                "value": 324,
+                                "label": "zkSync Era"
+                            },
+                            {
+                                "value": 369,
+                                "label": "PulseChain"
+                            },
+                            {
+                                "value": 420,
+                                "label": "Optimism Goerli"
+                            },
+                            {
+                                "value": 599,
+                                "label": "Metis Goerli"
+                            },
+                            {
+                                "value": 841,
+                                "label": "Taraxa Mainnet"
+                            },
+                            {
+                                "value": 842,
+                                "label": "Taraxa Testnet"
+                            },
+                            {
+                                "value": 888,
+                                "label": "Wanchain"
+                            },
+                            {
+                                "value": 943,
+                                "label": "PulseChain V4"
+                            },
+                            {
+                                "value": 997,
+                                "label": "5ireChain Thunder Testnet"
+                            },
+                            {
+                                "value": 999,
+                                "label": "Zora Goerli Testnet"
+                            },
+                            {
+                                "value": 1038,
+                                "label": "Bronos Testnet"
+                            },
+                            {
+                                "value": 1039,
+                                "label": "Bronos"
+                            },
+                            {
+                                "value": 1088,
+                                "label": "Metis"
+                            },
+                            {
+                                "value": 1101,
+                                "label": "Polygon zkEVM"
+                            },
+                            {
+                                "value": 1284,
+                                "label": "Moonbeam"
+                            },
+                            {
+                                "value": 1285,
+                                "label": "Moonriver"
+                            },
+                            {
+                                "value": 1287,
+                                "label": "Moonbase Alpha"
+                            },
+                            {
+                                "value": 1337,
+                                "label": "Localhost"
+                            },
+                            {
+                                "value": 1442,
+                                "label": "Polygon zkEVM Testnet"
+                            },
+                            {
+                                "value": 2000,
+                                "label": "Dogechain"
+                            },
+                            {
+                                "value": 3141,
+                                "label": "Filecoin Hyperspace"
+                            },
+                            {
+                                "value": 3737,
+                                "label": "Crossbell"
+                            },
+                            {
+                                "value": 4002,
+                                "label": "Fantom Testnet"
+                            },
+                            {
+                                "value": 4242,
+                                "label": "Nexi"
+                            },
+                            {
+                                "value": 4689,
+                                "label": "IoTeX"
+                            },
+                            {
+                                "value": 4690,
+                                "label": "IoTeX Testnet"
+                            },
+                            {
+                                "value": 7700,
+                                "label": "Canto"
+                            },
+                            {
+                                "value": 8082,
+                                "label": "Shardeum Sphinx"
+                            },
+                            {
+                                "value": 8217,
+                                "label": "Klaytn"
+                            },
+                            {
+                                "value": 9000,
+                                "label": "Evmos Testnet"
+                            },
+                            {
+                                "value": 9001,
+                                "label": "Evmos"
+                            },
+                            {
+                                "value": 10200,
+                                "label": "Gnosis Chiado"
+                            },
+                            {
+                                "value": 11235,
+                                "label": "HAQQ Mainnet"
+                            },
+                            {
+                                "value": 17323,
+                                "label": "Cannoli"
+                            },
+                            {
+                                "value": 31337,
+                                "label": "Hardhat"
+                            },
+                            {
+                                "value": 42161,
+                                "label": "Arbitrum One"
+                            },
+                            {
+                                "value": 42220,
+                                "label": "Celo"
+                            },
+                            {
+                                "value": 43113,
+                                "label": "Avalanche Fuji"
+                            },
+                            {
+                                "value": 43114,
+                                "label": "Avalanche"
+                            },
+                            {
+                                "value": 44787,
+                                "label": "Alfajores"
+                            },
+                            {
+                                "value": 53935,
+                                "label": "DFK Chain"
+                            },
+                            {
+                                "value": 54211,
+                                "label": "HAQQ Testedge 2"
+                            },
+                            {
+                                "value": 59140,
+                                "label": "Linea Goerli Testnet"
+                            },
+                            {
+                                "value": 80001,
+                                "label": "Polygon Mumbai"
+                            },
+                            {
+                                "value": 84531,
+                                "label": "Base Goerli"
+                            },
+                            {
+                                "value": 314159,
+                                "label": "Filecoin Calibration"
+                            },
+                            {
+                                "value": 421613,
+                                "label": "Arbitrum Goerli"
+                            },
+                            {
+                                "value": 534353,
+                                "label": "Scroll Testnet"
+                            },
+                            {
+                                "value": 1337803,
+                                "label": "Zhejiang"
+                            },
+                            {
+                                "value": 7777777,
+                                "label": "Zora"
+                            },
+                            {
+                                "value": 11155111,
+                                "label": "Sepolia"
+                            },
+                            {
+                                "value": 278611351,
+                                "label": "SKALE | Razor Network"
+                            },
+                            {
+                                "value": 344106930,
+                                "label": "SKALE | Calypso NFT Hub Testnet"
+                            },
+                            {
+                                "value": 391845894,
+                                "label": "SKALE | Block Brawlers"
+                            },
+                            {
+                                "value": 476158412,
+                                "label": "SKALE | Europa Liquidity Hub Testnet"
+                            },
+                            {
+                                "value": 503129905,
+                                "label": "SKALE | Nebula Gaming Hub Testnet"
+                            },
+                            {
+                                "value": 1026062157,
+                                "label": "SKALE | CryptoBlades"
+                            },
+                            {
+                                "value": 1273227453,
+                                "label": "SKALE | Human Protocol"
+                            },
+                            {
+                                "value": 1313161554,
+                                "label": "Aurora"
+                            },
+                            {
+                                "value": 1313161555,
+                                "label": "Aurora Testnet"
+                            },
+                            {
+                                "value": 1350216234,
+                                "label": "SKALE | Titan Community Hub"
+                            },
+                            {
+                                "value": 1351057110,
+                                "label": "SKALE | Chaos Testnet"
+                            },
+                            {
+                                "value": 1482601649,
+                                "label": "SKALE | Nebula Gaming Hub"
+                            },
+                            {
+                                "value": 1517929550,
+                                "label": "SKALE | Titan Community Hub Testnet"
+                            },
+                            {
+                                "value": 1564830818,
+                                "label": "SKALE | Calypso NFT Hub"
+                            },
+                            {
+                                "value": 1666600000,
+                                "label": "Harmony One"
+                            },
+                            {
+                                "value": 2046399126,
+                                "label": "SKALE | Europa Liquidity Hub"
+                            },
+                            {
+                                "value": 2139927552,
+                                "label": "SKALE | Exorde"
+                            }
+                        ]
+                    },
+                    "type": "STATIC_DROPDOWN"
+                },
+                "network": {
+                    "displayName": "Network",
+                    "description": "Network data override",
+                    "required": false,
+                    "type": "OBJECT"
+                },
+                "from": {
+                    "displayName": "From Address",
+                    "description": "From Address",
+                    "required": true,
+                    "type": "SHORT_TEXT"
+                },
+                "to": {
+                    "displayName": "To Address",
+                    "description": "To Address",
+                    "required": true,
+                    "type": "SHORT_TEXT"
+                },
+                "amount": {
+                    "displayName": "Amount",
+                    "description": "Amount in ETH (1.0 = 1 ETH)",
+                    "required": true,
+                    "defaultProcessors": [
+                        null
+                    ],
+                    "defaultValidators": [
+                        {
+                            "type": "NUMBER"
+                        }
+                    ],
+                    "type": "NUMBER"
+                }
+            },
+            "requireAuth": true
+        },
+        "contractCall": {
+            "name": "contractCall",
+            "displayName": "Contract Call",
+            "description": "Call a contract method with the given parameters",
+            "props": {
+                "chain": {
+                    "displayName": "Chain",
+                    "description": "Chain to use",
+                    "required": true,
+                    "options": {
+                        "disabled": false,
+                        "options": [
+                            {
+                                "value": 1,
+                                "label": "Ethereum"
+                            },
+                            {
+                                "value": 5,
+                                "label": "Goerli"
+                            },
+                            {
+                                "value": 10,
+                                "label": "OP Mainnet"
+                            },
+                            {
+                                "value": 14,
+                                "label": "Flare Mainnet"
+                            },
+                            {
+                                "value": 16,
+                                "label": "Coston"
+                            },
+                            {
+                                "value": 19,
+                                "label": "Songbird Mainnet"
+                            },
+                            {
+                                "value": 25,
+                                "label": "Cronos"
+                            },
+                            {
+                                "value": 40,
+                                "label": "Telos"
+                            },
+                            {
+                                "value": 41,
+                                "label": "Telos"
+                            },
+                            {
+                                "value": 50,
+                                "label": "XinFin Network"
+                            },
+                            {
+                                "value": 51,
+                                "label": "Apothem Network"
+                            },
+                            {
+                                "value": 56,
+                                "label": "BNB Smart Chain"
+                            },
+                            {
+                                "value": 57,
+                                "label": "Syscoin Mainnet"
+                            },
+                            {
+                                "value": 66,
+                                "label": "OKC"
+                            },
+                            {
+                                "value": 97,
+                                "label": "Binance Smart Chain Testnet"
+                            },
+                            {
+                                "value": 100,
+                                "label": "Gnosis"
+                            },
+                            {
+                                "value": 114,
+                                "label": "Coston2"
+                            },
+                            {
+                                "value": 137,
+                                "label": "Polygon"
+                            },
+                            {
+                                "value": 250,
+                                "label": "Fantom"
+                            },
+                            {
+                                "value": 280,
+                                "label": "zkSync Era Testnet"
+                            },
+                            {
+                                "value": 288,
+                                "label": "Boba Network"
+                            },
+                            {
+                                "value": 314,
+                                "label": "Filecoin Mainnet"
+                            },
+                            {
+                                "value": 324,
+                                "label": "zkSync Era"
+                            },
+                            {
+                                "value": 369,
+                                "label": "PulseChain"
+                            },
+                            {
+                                "value": 420,
+                                "label": "Optimism Goerli"
+                            },
+                            {
+                                "value": 599,
+                                "label": "Metis Goerli"
+                            },
+                            {
+                                "value": 841,
+                                "label": "Taraxa Mainnet"
+                            },
+                            {
+                                "value": 842,
+                                "label": "Taraxa Testnet"
+                            },
+                            {
+                                "value": 888,
+                                "label": "Wanchain"
+                            },
+                            {
+                                "value": 943,
+                                "label": "PulseChain V4"
+                            },
+                            {
+                                "value": 997,
+                                "label": "5ireChain Thunder Testnet"
+                            },
+                            {
+                                "value": 999,
+                                "label": "Zora Goerli Testnet"
+                            },
+                            {
+                                "value": 1038,
+                                "label": "Bronos Testnet"
+                            },
+                            {
+                                "value": 1039,
+                                "label": "Bronos"
+                            },
+                            {
+                                "value": 1088,
+                                "label": "Metis"
+                            },
+                            {
+                                "value": 1101,
+                                "label": "Polygon zkEVM"
+                            },
+                            {
+                                "value": 1284,
+                                "label": "Moonbeam"
+                            },
+                            {
+                                "value": 1285,
+                                "label": "Moonriver"
+                            },
+                            {
+                                "value": 1287,
+                                "label": "Moonbase Alpha"
+                            },
+                            {
+                                "value": 1337,
+                                "label": "Localhost"
+                            },
+                            {
+                                "value": 1442,
+                                "label": "Polygon zkEVM Testnet"
+                            },
+                            {
+                                "value": 2000,
+                                "label": "Dogechain"
+                            },
+                            {
+                                "value": 3141,
+                                "label": "Filecoin Hyperspace"
+                            },
+                            {
+                                "value": 3737,
+                                "label": "Crossbell"
+                            },
+                            {
+                                "value": 4002,
+                                "label": "Fantom Testnet"
+                            },
+                            {
+                                "value": 4242,
+                                "label": "Nexi"
+                            },
+                            {
+                                "value": 4689,
+                                "label": "IoTeX"
+                            },
+                            {
+                                "value": 4690,
+                                "label": "IoTeX Testnet"
+                            },
+                            {
+                                "value": 7700,
+                                "label": "Canto"
+                            },
+                            {
+                                "value": 8082,
+                                "label": "Shardeum Sphinx"
+                            },
+                            {
+                                "value": 8217,
+                                "label": "Klaytn"
+                            },
+                            {
+                                "value": 9000,
+                                "label": "Evmos Testnet"
+                            },
+                            {
+                                "value": 9001,
+                                "label": "Evmos"
+                            },
+                            {
+                                "value": 10200,
+                                "label": "Gnosis Chiado"
+                            },
+                            {
+                                "value": 11235,
+                                "label": "HAQQ Mainnet"
+                            },
+                            {
+                                "value": 17323,
+                                "label": "Cannoli"
+                            },
+                            {
+                                "value": 31337,
+                                "label": "Hardhat"
+                            },
+                            {
+                                "value": 42161,
+                                "label": "Arbitrum One"
+                            },
+                            {
+                                "value": 42220,
+                                "label": "Celo"
+                            },
+                            {
+                                "value": 43113,
+                                "label": "Avalanche Fuji"
+                            },
+                            {
+                                "value": 43114,
+                                "label": "Avalanche"
+                            },
+                            {
+                                "value": 44787,
+                                "label": "Alfajores"
+                            },
+                            {
+                                "value": 53935,
+                                "label": "DFK Chain"
+                            },
+                            {
+                                "value": 54211,
+                                "label": "HAQQ Testedge 2"
+                            },
+                            {
+                                "value": 59140,
+                                "label": "Linea Goerli Testnet"
+                            },
+                            {
+                                "value": 80001,
+                                "label": "Polygon Mumbai"
+                            },
+                            {
+                                "value": 84531,
+                                "label": "Base Goerli"
+                            },
+                            {
+                                "value": 314159,
+                                "label": "Filecoin Calibration"
+                            },
+                            {
+                                "value": 421613,
+                                "label": "Arbitrum Goerli"
+                            },
+                            {
+                                "value": 534353,
+                                "label": "Scroll Testnet"
+                            },
+                            {
+                                "value": 1337803,
+                                "label": "Zhejiang"
+                            },
+                            {
+                                "value": 7777777,
+                                "label": "Zora"
+                            },
+                            {
+                                "value": 11155111,
+                                "label": "Sepolia"
+                            },
+                            {
+                                "value": 278611351,
+                                "label": "SKALE | Razor Network"
+                            },
+                            {
+                                "value": 344106930,
+                                "label": "SKALE | Calypso NFT Hub Testnet"
+                            },
+                            {
+                                "value": 391845894,
+                                "label": "SKALE | Block Brawlers"
+                            },
+                            {
+                                "value": 476158412,
+                                "label": "SKALE | Europa Liquidity Hub Testnet"
+                            },
+                            {
+                                "value": 503129905,
+                                "label": "SKALE | Nebula Gaming Hub Testnet"
+                            },
+                            {
+                                "value": 1026062157,
+                                "label": "SKALE | CryptoBlades"
+                            },
+                            {
+                                "value": 1273227453,
+                                "label": "SKALE | Human Protocol"
+                            },
+                            {
+                                "value": 1313161554,
+                                "label": "Aurora"
+                            },
+                            {
+                                "value": 1313161555,
+                                "label": "Aurora Testnet"
+                            },
+                            {
+                                "value": 1350216234,
+                                "label": "SKALE | Titan Community Hub"
+                            },
+                            {
+                                "value": 1351057110,
+                                "label": "SKALE | Chaos Testnet"
+                            },
+                            {
+                                "value": 1482601649,
+                                "label": "SKALE | Nebula Gaming Hub"
+                            },
+                            {
+                                "value": 1517929550,
+                                "label": "SKALE | Titan Community Hub Testnet"
+                            },
+                            {
+                                "value": 1564830818,
+                                "label": "SKALE | Calypso NFT Hub"
+                            },
+                            {
+                                "value": 1666600000,
+                                "label": "Harmony One"
+                            },
+                            {
+                                "value": 2046399126,
+                                "label": "SKALE | Europa Liquidity Hub"
+                            },
+                            {
+                                "value": 2139927552,
+                                "label": "SKALE | Exorde"
+                            }
+                        ]
+                    },
+                    "type": "STATIC_DROPDOWN"
+                },
+                "network": {
+                    "displayName": "Network",
+                    "description": "Network data override",
+                    "required": false,
+                    "type": "OBJECT"
+                },
+                "contract": {
+                    "displayName": "To Address",
+                    "description": "To Address",
+                    "required": true,
+                    "type": "SHORT_TEXT"
+                },
+                "abi": {
+                    "displayName": "ABI",
+                    "description": "JSON encoded ABI",
+                    "required": false,
+                    "type": "SHORT_TEXT"
+                },
+                "method": {
+                    "displayName": "Method",
+                    "description": "Method to call",
+                    "refreshers": [
+                        "contract",
+                        "chain"
+                    ],
+                    "required": true,
+                    "type": "DROPDOWN"
+                },
+                "parameters": {
+                    "displayName": "Arguments",
+                    "description": "Arguments to pass to the contract method",
+                    "refreshers": [
+                        "method"
+                    ],
+                    "required": true,
+                    "type": "DYNAMIC"
+                }
+            },
+            "requireAuth": false
+        },
+        "populateTransaction": {
+            "name": "populateTransaction",
+            "displayName": "Populate Transaction",
+            "description": "Populate a transaction with the gas price and nonce",
+            "props": {
+                "chain": {
+                    "displayName": "Chain",
+                    "description": "Chain to use",
+                    "required": true,
+                    "options": {
+                        "disabled": false,
+                        "options": [
+                            {
+                                "value": 1,
+                                "label": "Ethereum"
+                            },
+                            {
+                                "value": 5,
+                                "label": "Goerli"
+                            },
+                            {
+                                "value": 10,
+                                "label": "OP Mainnet"
+                            },
+                            {
+                                "value": 14,
+                                "label": "Flare Mainnet"
+                            },
+                            {
+                                "value": 16,
+                                "label": "Coston"
+                            },
+                            {
+                                "value": 19,
+                                "label": "Songbird Mainnet"
+                            },
+                            {
+                                "value": 25,
+                                "label": "Cronos"
+                            },
+                            {
+                                "value": 40,
+                                "label": "Telos"
+                            },
+                            {
+                                "value": 41,
+                                "label": "Telos"
+                            },
+                            {
+                                "value": 50,
+                                "label": "XinFin Network"
+                            },
+                            {
+                                "value": 51,
+                                "label": "Apothem Network"
+                            },
+                            {
+                                "value": 56,
+                                "label": "BNB Smart Chain"
+                            },
+                            {
+                                "value": 57,
+                                "label": "Syscoin Mainnet"
+                            },
+                            {
+                                "value": 66,
+                                "label": "OKC"
+                            },
+                            {
+                                "value": 97,
+                                "label": "Binance Smart Chain Testnet"
+                            },
+                            {
+                                "value": 100,
+                                "label": "Gnosis"
+                            },
+                            {
+                                "value": 114,
+                                "label": "Coston2"
+                            },
+                            {
+                                "value": 137,
+                                "label": "Polygon"
+                            },
+                            {
+                                "value": 250,
+                                "label": "Fantom"
+                            },
+                            {
+                                "value": 280,
+                                "label": "zkSync Era Testnet"
+                            },
+                            {
+                                "value": 288,
+                                "label": "Boba Network"
+                            },
+                            {
+                                "value": 314,
+                                "label": "Filecoin Mainnet"
+                            },
+                            {
+                                "value": 324,
+                                "label": "zkSync Era"
+                            },
+                            {
+                                "value": 369,
+                                "label": "PulseChain"
+                            },
+                            {
+                                "value": 420,
+                                "label": "Optimism Goerli"
+                            },
+                            {
+                                "value": 599,
+                                "label": "Metis Goerli"
+                            },
+                            {
+                                "value": 841,
+                                "label": "Taraxa Mainnet"
+                            },
+                            {
+                                "value": 842,
+                                "label": "Taraxa Testnet"
+                            },
+                            {
+                                "value": 888,
+                                "label": "Wanchain"
+                            },
+                            {
+                                "value": 943,
+                                "label": "PulseChain V4"
+                            },
+                            {
+                                "value": 997,
+                                "label": "5ireChain Thunder Testnet"
+                            },
+                            {
+                                "value": 999,
+                                "label": "Zora Goerli Testnet"
+                            },
+                            {
+                                "value": 1038,
+                                "label": "Bronos Testnet"
+                            },
+                            {
+                                "value": 1039,
+                                "label": "Bronos"
+                            },
+                            {
+                                "value": 1088,
+                                "label": "Metis"
+                            },
+                            {
+                                "value": 1101,
+                                "label": "Polygon zkEVM"
+                            },
+                            {
+                                "value": 1284,
+                                "label": "Moonbeam"
+                            },
+                            {
+                                "value": 1285,
+                                "label": "Moonriver"
+                            },
+                            {
+                                "value": 1287,
+                                "label": "Moonbase Alpha"
+                            },
+                            {
+                                "value": 1337,
+                                "label": "Localhost"
+                            },
+                            {
+                                "value": 1442,
+                                "label": "Polygon zkEVM Testnet"
+                            },
+                            {
+                                "value": 2000,
+                                "label": "Dogechain"
+                            },
+                            {
+                                "value": 3141,
+                                "label": "Filecoin Hyperspace"
+                            },
+                            {
+                                "value": 3737,
+                                "label": "Crossbell"
+                            },
+                            {
+                                "value": 4002,
+                                "label": "Fantom Testnet"
+                            },
+                            {
+                                "value": 4242,
+                                "label": "Nexi"
+                            },
+                            {
+                                "value": 4689,
+                                "label": "IoTeX"
+                            },
+                            {
+                                "value": 4690,
+                                "label": "IoTeX Testnet"
+                            },
+                            {
+                                "value": 7700,
+                                "label": "Canto"
+                            },
+                            {
+                                "value": 8082,
+                                "label": "Shardeum Sphinx"
+                            },
+                            {
+                                "value": 8217,
+                                "label": "Klaytn"
+                            },
+                            {
+                                "value": 9000,
+                                "label": "Evmos Testnet"
+                            },
+                            {
+                                "value": 9001,
+                                "label": "Evmos"
+                            },
+                            {
+                                "value": 10200,
+                                "label": "Gnosis Chiado"
+                            },
+                            {
+                                "value": 11235,
+                                "label": "HAQQ Mainnet"
+                            },
+                            {
+                                "value": 17323,
+                                "label": "Cannoli"
+                            },
+                            {
+                                "value": 31337,
+                                "label": "Hardhat"
+                            },
+                            {
+                                "value": 42161,
+                                "label": "Arbitrum One"
+                            },
+                            {
+                                "value": 42220,
+                                "label": "Celo"
+                            },
+                            {
+                                "value": 43113,
+                                "label": "Avalanche Fuji"
+                            },
+                            {
+                                "value": 43114,
+                                "label": "Avalanche"
+                            },
+                            {
+                                "value": 44787,
+                                "label": "Alfajores"
+                            },
+                            {
+                                "value": 53935,
+                                "label": "DFK Chain"
+                            },
+                            {
+                                "value": 54211,
+                                "label": "HAQQ Testedge 2"
+                            },
+                            {
+                                "value": 59140,
+                                "label": "Linea Goerli Testnet"
+                            },
+                            {
+                                "value": 80001,
+                                "label": "Polygon Mumbai"
+                            },
+                            {
+                                "value": 84531,
+                                "label": "Base Goerli"
+                            },
+                            {
+                                "value": 314159,
+                                "label": "Filecoin Calibration"
+                            },
+                            {
+                                "value": 421613,
+                                "label": "Arbitrum Goerli"
+                            },
+                            {
+                                "value": 534353,
+                                "label": "Scroll Testnet"
+                            },
+                            {
+                                "value": 1337803,
+                                "label": "Zhejiang"
+                            },
+                            {
+                                "value": 7777777,
+                                "label": "Zora"
+                            },
+                            {
+                                "value": 11155111,
+                                "label": "Sepolia"
+                            },
+                            {
+                                "value": 278611351,
+                                "label": "SKALE | Razor Network"
+                            },
+                            {
+                                "value": 344106930,
+                                "label": "SKALE | Calypso NFT Hub Testnet"
+                            },
+                            {
+                                "value": 391845894,
+                                "label": "SKALE | Block Brawlers"
+                            },
+                            {
+                                "value": 476158412,
+                                "label": "SKALE | Europa Liquidity Hub Testnet"
+                            },
+                            {
+                                "value": 503129905,
+                                "label": "SKALE | Nebula Gaming Hub Testnet"
+                            },
+                            {
+                                "value": 1026062157,
+                                "label": "SKALE | CryptoBlades"
+                            },
+                            {
+                                "value": 1273227453,
+                                "label": "SKALE | Human Protocol"
+                            },
+                            {
+                                "value": 1313161554,
+                                "label": "Aurora"
+                            },
+                            {
+                                "value": 1313161555,
+                                "label": "Aurora Testnet"
+                            },
+                            {
+                                "value": 1350216234,
+                                "label": "SKALE | Titan Community Hub"
+                            },
+                            {
+                                "value": 1351057110,
+                                "label": "SKALE | Chaos Testnet"
+                            },
+                            {
+                                "value": 1482601649,
+                                "label": "SKALE | Nebula Gaming Hub"
+                            },
+                            {
+                                "value": 1517929550,
+                                "label": "SKALE | Titan Community Hub Testnet"
+                            },
+                            {
+                                "value": 1564830818,
+                                "label": "SKALE | Calypso NFT Hub"
+                            },
+                            {
+                                "value": 1666600000,
+                                "label": "Harmony One"
+                            },
+                            {
+                                "value": 2046399126,
+                                "label": "SKALE | Europa Liquidity Hub"
+                            },
+                            {
+                                "value": 2139927552,
+                                "label": "SKALE | Exorde"
+                            }
+                        ]
+                    },
+                    "type": "STATIC_DROPDOWN"
+                },
+                "network": {
+                    "displayName": "Network",
+                    "description": "Network data override",
+                    "required": false,
+                    "type": "OBJECT"
+                },
+                "from": {
+                    "displayName": "From Address",
+                    "description": "Transaction sender address",
+                    "required": true,
+                    "type": "SHORT_TEXT"
+                },
+                "tx": {
+                    "displayName": "Partial transaction",
+                    "description": "Partial transaction to populate",
+                    "required": true,
+                    "type": "OBJECT"
+                }
+            },
+            "requireAuth": true
+        },
+        "broadcastTransaction": {
+            "name": "broadcastTransaction",
+            "displayName": "Broadcast Tx",
+            "description": "Broadcast a transaction",
+            "props": {
+                "chain": {
+                    "displayName": "Chain",
+                    "description": "Chain to use",
+                    "required": true,
+                    "options": {
+                        "disabled": false,
+                        "options": [
+                            {
+                                "value": 1,
+                                "label": "Ethereum"
+                            },
+                            {
+                                "value": 5,
+                                "label": "Goerli"
+                            },
+                            {
+                                "value": 10,
+                                "label": "OP Mainnet"
+                            },
+                            {
+                                "value": 14,
+                                "label": "Flare Mainnet"
+                            },
+                            {
+                                "value": 16,
+                                "label": "Coston"
+                            },
+                            {
+                                "value": 19,
+                                "label": "Songbird Mainnet"
+                            },
+                            {
+                                "value": 25,
+                                "label": "Cronos"
+                            },
+                            {
+                                "value": 40,
+                                "label": "Telos"
+                            },
+                            {
+                                "value": 41,
+                                "label": "Telos"
+                            },
+                            {
+                                "value": 50,
+                                "label": "XinFin Network"
+                            },
+                            {
+                                "value": 51,
+                                "label": "Apothem Network"
+                            },
+                            {
+                                "value": 56,
+                                "label": "BNB Smart Chain"
+                            },
+                            {
+                                "value": 57,
+                                "label": "Syscoin Mainnet"
+                            },
+                            {
+                                "value": 66,
+                                "label": "OKC"
+                            },
+                            {
+                                "value": 97,
+                                "label": "Binance Smart Chain Testnet"
+                            },
+                            {
+                                "value": 100,
+                                "label": "Gnosis"
+                            },
+                            {
+                                "value": 114,
+                                "label": "Coston2"
+                            },
+                            {
+                                "value": 137,
+                                "label": "Polygon"
+                            },
+                            {
+                                "value": 250,
+                                "label": "Fantom"
+                            },
+                            {
+                                "value": 280,
+                                "label": "zkSync Era Testnet"
+                            },
+                            {
+                                "value": 288,
+                                "label": "Boba Network"
+                            },
+                            {
+                                "value": 314,
+                                "label": "Filecoin Mainnet"
+                            },
+                            {
+                                "value": 324,
+                                "label": "zkSync Era"
+                            },
+                            {
+                                "value": 369,
+                                "label": "PulseChain"
+                            },
+                            {
+                                "value": 420,
+                                "label": "Optimism Goerli"
+                            },
+                            {
+                                "value": 599,
+                                "label": "Metis Goerli"
+                            },
+                            {
+                                "value": 841,
+                                "label": "Taraxa Mainnet"
+                            },
+                            {
+                                "value": 842,
+                                "label": "Taraxa Testnet"
+                            },
+                            {
+                                "value": 888,
+                                "label": "Wanchain"
+                            },
+                            {
+                                "value": 943,
+                                "label": "PulseChain V4"
+                            },
+                            {
+                                "value": 997,
+                                "label": "5ireChain Thunder Testnet"
+                            },
+                            {
+                                "value": 999,
+                                "label": "Zora Goerli Testnet"
+                            },
+                            {
+                                "value": 1038,
+                                "label": "Bronos Testnet"
+                            },
+                            {
+                                "value": 1039,
+                                "label": "Bronos"
+                            },
+                            {
+                                "value": 1088,
+                                "label": "Metis"
+                            },
+                            {
+                                "value": 1101,
+                                "label": "Polygon zkEVM"
+                            },
+                            {
+                                "value": 1284,
+                                "label": "Moonbeam"
+                            },
+                            {
+                                "value": 1285,
+                                "label": "Moonriver"
+                            },
+                            {
+                                "value": 1287,
+                                "label": "Moonbase Alpha"
+                            },
+                            {
+                                "value": 1337,
+                                "label": "Localhost"
+                            },
+                            {
+                                "value": 1442,
+                                "label": "Polygon zkEVM Testnet"
+                            },
+                            {
+                                "value": 2000,
+                                "label": "Dogechain"
+                            },
+                            {
+                                "value": 3141,
+                                "label": "Filecoin Hyperspace"
+                            },
+                            {
+                                "value": 3737,
+                                "label": "Crossbell"
+                            },
+                            {
+                                "value": 4002,
+                                "label": "Fantom Testnet"
+                            },
+                            {
+                                "value": 4242,
+                                "label": "Nexi"
+                            },
+                            {
+                                "value": 4689,
+                                "label": "IoTeX"
+                            },
+                            {
+                                "value": 4690,
+                                "label": "IoTeX Testnet"
+                            },
+                            {
+                                "value": 7700,
+                                "label": "Canto"
+                            },
+                            {
+                                "value": 8082,
+                                "label": "Shardeum Sphinx"
+                            },
+                            {
+                                "value": 8217,
+                                "label": "Klaytn"
+                            },
+                            {
+                                "value": 9000,
+                                "label": "Evmos Testnet"
+                            },
+                            {
+                                "value": 9001,
+                                "label": "Evmos"
+                            },
+                            {
+                                "value": 10200,
+                                "label": "Gnosis Chiado"
+                            },
+                            {
+                                "value": 11235,
+                                "label": "HAQQ Mainnet"
+                            },
+                            {
+                                "value": 17323,
+                                "label": "Cannoli"
+                            },
+                            {
+                                "value": 31337,
+                                "label": "Hardhat"
+                            },
+                            {
+                                "value": 42161,
+                                "label": "Arbitrum One"
+                            },
+                            {
+                                "value": 42220,
+                                "label": "Celo"
+                            },
+                            {
+                                "value": 43113,
+                                "label": "Avalanche Fuji"
+                            },
+                            {
+                                "value": 43114,
+                                "label": "Avalanche"
+                            },
+                            {
+                                "value": 44787,
+                                "label": "Alfajores"
+                            },
+                            {
+                                "value": 53935,
+                                "label": "DFK Chain"
+                            },
+                            {
+                                "value": 54211,
+                                "label": "HAQQ Testedge 2"
+                            },
+                            {
+                                "value": 59140,
+                                "label": "Linea Goerli Testnet"
+                            },
+                            {
+                                "value": 80001,
+                                "label": "Polygon Mumbai"
+                            },
+                            {
+                                "value": 84531,
+                                "label": "Base Goerli"
+                            },
+                            {
+                                "value": 314159,
+                                "label": "Filecoin Calibration"
+                            },
+                            {
+                                "value": 421613,
+                                "label": "Arbitrum Goerli"
+                            },
+                            {
+                                "value": 534353,
+                                "label": "Scroll Testnet"
+                            },
+                            {
+                                "value": 1337803,
+                                "label": "Zhejiang"
+                            },
+                            {
+                                "value": 7777777,
+                                "label": "Zora"
+                            },
+                            {
+                                "value": 11155111,
+                                "label": "Sepolia"
+                            },
+                            {
+                                "value": 278611351,
+                                "label": "SKALE | Razor Network"
+                            },
+                            {
+                                "value": 344106930,
+                                "label": "SKALE | Calypso NFT Hub Testnet"
+                            },
+                            {
+                                "value": 391845894,
+                                "label": "SKALE | Block Brawlers"
+                            },
+                            {
+                                "value": 476158412,
+                                "label": "SKALE | Europa Liquidity Hub Testnet"
+                            },
+                            {
+                                "value": 503129905,
+                                "label": "SKALE | Nebula Gaming Hub Testnet"
+                            },
+                            {
+                                "value": 1026062157,
+                                "label": "SKALE | CryptoBlades"
+                            },
+                            {
+                                "value": 1273227453,
+                                "label": "SKALE | Human Protocol"
+                            },
+                            {
+                                "value": 1313161554,
+                                "label": "Aurora"
+                            },
+                            {
+                                "value": 1313161555,
+                                "label": "Aurora Testnet"
+                            },
+                            {
+                                "value": 1350216234,
+                                "label": "SKALE | Titan Community Hub"
+                            },
+                            {
+                                "value": 1351057110,
+                                "label": "SKALE | Chaos Testnet"
+                            },
+                            {
+                                "value": 1482601649,
+                                "label": "SKALE | Nebula Gaming Hub"
+                            },
+                            {
+                                "value": 1517929550,
+                                "label": "SKALE | Titan Community Hub Testnet"
+                            },
+                            {
+                                "value": 1564830818,
+                                "label": "SKALE | Calypso NFT Hub"
+                            },
+                            {
+                                "value": 1666600000,
+                                "label": "Harmony One"
+                            },
+                            {
+                                "value": 2046399126,
+                                "label": "SKALE | Europa Liquidity Hub"
+                            },
+                            {
+                                "value": 2139927552,
+                                "label": "SKALE | Exorde"
+                            }
+                        ]
+                    },
+                    "type": "STATIC_DROPDOWN"
+                },
+                "network": {
+                    "displayName": "Network",
+                    "description": "Network data override",
+                    "required": false,
+                    "type": "OBJECT"
+                },
+                "serializedTx": {
+                    "displayName": "Serialized tx",
+                    "description": "Serialized tx to broadcast",
+                    "required": true,
+                    "type": "SHORT_TEXT"
+                }
+            },
+            "requireAuth": true
+        }
+    },
+    "triggers": {
+        "event": {
+            "name": "event",
+            "displayName": "On Event",
+            "description": "Triggers when a new event appears in the blockchain",
+            "props": {
+                "base": {
+                    "displayName": "Base",
+                    "required": true,
+                    "refreshers": [],
+                    "type": "DROPDOWN"
+                },
+                "tableId": {
+                    "displayName": "Table",
+                    "required": true,
+                    "refreshers": [
+                        "base"
+                    ],
+                    "type": "DROPDOWN"
+                }
+            },
+            "type": "POLLING",
+            "requireAuth": true
+        }
+    },
+    "description": "",
+    "name": "@tookey-io/piece-ethereum",
+    "version": "0.0.2"
+}

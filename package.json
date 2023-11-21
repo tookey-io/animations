@@ -1,0 +1,25 @@
+{
+  "name": "@tookey-io/animations",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "serve": "vite",
+    "build": "tsc && vite build"
+  },
+  "dependencies": {
+    "@motion-canvas/2d": "^3.10.1",
+    "@motion-canvas/core": "^3.10.0",
+    "@motion-canvas/ffmpeg": "^1.1.0",
+    "media-codecs": "^2.0.0",
+    "mp4-muxer": "^2.2.2"
+  },
+  "devDependencies": {
+    "@motion-canvas/ui": "^3.10.0",
+    "@motion-canvas/vite-plugin": "^3.10.0",
+    "slugify": "^1.6.6",
+    "ts-node": "^10.9.1",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^4.9.5",
+    "vite": "^4.1.4"
+  }
+}

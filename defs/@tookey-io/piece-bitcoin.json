@@ -1,0 +1,47 @@
+{
+    "directoryName": "bitcoin",
+    "displayName": "Bitcoin",
+    "tags": [],
+    "logoUrl": "https://raw.githubusercontent.com/tookey-io/icons/main/piece-bitcoin.png",
+    "actions": {
+      "fetch_ordinals": {
+        "name": "fetch_ordinals",
+        "displayName": "Fetch Ordinals",
+        "description": "Collect available ordinals for the given address",
+        "props": {
+          "network": {
+            "displayName": "Network",
+            "description": "Network to fetch ordinals for",
+            "required": true,
+            "options": {
+              "options": [
+                {
+                  "label": "Mainnet",
+                  "value": "mainnet"
+                },
+                {
+                  "label": "Testnet",
+                  "value": "testnet"
+                }
+              ]
+            },
+            "type": "STATIC_DROPDOWN"
+          },
+          "address": {
+            "displayName": "Address",
+            "description": "Address to fetch ordinals for",
+            "required": true,
+            "type": "SHORT_TEXT"
+          }
+        },
+        "requireAuth": false
+      }
+    },
+    "triggers": {
+  
+    },
+    "description": "",
+    "minimumSupportedRelease": "0.7.1",
+    "name": "@tookey-io/piece-bitcoin",
+    "version": "0.0.1"
+  }

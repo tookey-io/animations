@@ -1,0 +1,15 @@
+{
+  "extends": "@motion-canvas/2d/tsconfig.project.json",
+  "ts-node": {
+    "compilerOptions": {
+      "esModuleInterop": true,
+      "module": "commonjs"
+    }
+  },
+  "compilerOptions": {
+    "paths": {
+      "@tookey-io/animations/*": ["./src/*"]
+    }
+  },
+  "include": ["src"]
+}

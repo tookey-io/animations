@@ -1,0 +1,37 @@
+{
+  "version": 0,
+  "shared": {
+    "background": null,
+    "range": [
+      0,
+      15.149999000000001
+    ],
+    "size": {
+      "x": 1280,
+      "y": 720
+    },
+    "audioOffset": 0
+  },
+  "preview": {
+    "fps": 60,
+    "resolutionScale": 1
+  },
+  "rendering": {
+    "fps": 120,
+    "resolutionScale": 1,
+    "colorSpace": "srgb",
+    "exporter": {
+      "name": "@webcodecs",
+      "options": {
+        "includeAudio": true,
+        "videoCodec": "h264",
+        "videoCodecProfile": "Main",
+        "videoCodecLevel": "5.1",
+        "bitrate": 1000000,
+        "keyframeInterval": 200,
+        "hardwarePreference": "prefer-hardware",
+        "frameMixing": 4
+      }
+    }
+  }
+}

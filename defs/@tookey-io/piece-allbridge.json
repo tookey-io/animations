@@ -1,0 +1,155 @@
+{
+    "directoryName": "allbridge",
+    "displayName": "Allbridge",
+    "tags": [],
+    "logoUrl": "https://raw.githubusercontent.com/tookey-io/icons/main/piece-allbridge.png",
+    "actions": {
+      "swap_stables_exact_in": {
+        "name": "swap_stables_exact_in",
+        "displayName": "Swap Exact Amount",
+        "description": "Cross-chain swap exact amount of stables",
+        "props": {
+          "from": {
+            "displayName": "From Stable",
+            "description": "Select from token",
+            "required": true,
+            "options": {
+              "options": [
+                {
+                  "value": "polygon_usdc",
+                  "label": "Polygon USDC"
+                },
+                {
+                  "value": "tron_usdt",
+                  "label": "Tron USDT"
+                },
+                {
+                  "value": "ethereum_usdt",
+                  "label": "Ethereum USDT"
+                }
+              ]
+            },
+            "type": "STATIC_DROPDOWN"
+          },
+          "to": {
+            "displayName": "To Stable",
+            "description": "Select from token",
+            "required": true,
+            "options": {
+              "options": [
+                {
+                  "value": "polygon_usdc",
+                  "label": "Polygon USDC"
+                },
+                {
+                  "value": "tron_usdt",
+                  "label": "Tron USDT"
+                },
+                {
+                  "value": "ethereum_usdt",
+                  "label": "Ethereum USDT"
+                }
+              ]
+            },
+            "type": "STATIC_DROPDOWN"
+          },
+          "amount": {
+            "displayName": "Amount",
+            "description": "Amount to swap",
+            "required": true,
+            "defaultProcessors": [null],
+            "defaultValidators": [
+              {
+                "type": "NUMBER"
+              }
+            ],
+            "type": "NUMBER"
+          },
+          "destinationWallet": {
+            "displayName": "Destination Wallet",
+            "description": "Destination wallet address",
+            "required": false,
+            "type": "SHORT_TEXT"
+          }
+        },
+        "requireAuth": false
+      },
+      "swap_stables_exact_out": {
+        "name": "swap_stables_exact_out",
+        "displayName": "Swap To Exact Out",
+        "description": "Cross-chain swap stables to exact amount out",
+        "props": {
+          "from": {
+            "displayName": "From Stable",
+            "description": "Select from token",
+            "required": true,
+            "options": {
+              "options": [
+                {
+                  "value": "polygon_usdc",
+                  "label": "Polygon USDC"
+                },
+                {
+                  "value": "tron_usdt",
+                  "label": "Tron USDT"
+                },
+                {
+                  "value": "ethereum_usdt",
+                  "label": "Ethereum USDT"
+                }
+              ]
+            },
+            "type": "STATIC_DROPDOWN"
+          },
+          "to": {
+            "displayName": "To Stable",
+            "description": "Select from token",
+            "required": true,
+            "options": {
+              "options": [
+                {
+                  "value": "polygon_usdc",
+                  "label": "Polygon USDC"
+                },
+                {
+                  "value": "tron_usdt",
+                  "label": "Tron USDT"
+                },
+                {
+                  "value": "ethereum_usdt",
+                  "label": "Ethereum USDT"
+                }
+              ]
+            },
+            "type": "STATIC_DROPDOWN"
+          },
+          "amount": {
+            "displayName": "Amount",
+            "description": "Amount to swap",
+            "required": true,
+            "defaultProcessors": [null],
+            "defaultValidators": [
+              {
+                "type": "NUMBER"
+              }
+            ],
+            "type": "NUMBER"
+          },
+          "destinationWallet": {
+            "displayName": "Destination Wallet",
+            "description": "Destination wallet address",
+            "required": false,
+            "type": "SHORT_TEXT"
+          }
+        },
+        "requireAuth": false
+      }
+    },
+    "triggers": {
+  
+    },
+    "description": "",
+    "minimumSupportedRelease": "0.7.1",
+    "name": "@tookey-io/piece-allbridge",
+    "version": "0.0.1"
+  }

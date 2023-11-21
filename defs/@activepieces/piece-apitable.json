@@ -1,0 +1,212 @@
+{
+    "id": "9wbJG3MJq0e1O4P9JWsoj",
+    "created": "2023-07-25T10:56:31.528Z",
+    "updated": "2023-07-25T10:56:31.528Z",
+    "name": "@activepieces/piece-apitable",
+    "displayName": "APITable",
+    "logoUrl": "https://cdn.activepieces.com/pieces/apitable.png",
+    "description": "",
+    "projectId": null,
+    "version": "0.0.4",
+    "minimumSupportedRelease": "0.5.0",
+    "maximumSupportedRelease": "99999.99999.9999",
+    "auth": {
+        "type": "CUSTOM_AUTH",
+        "props": {
+            "token": {
+                "type": "SECRET_TEXT",
+                "required": true,
+                "description": "The token of the APITable account",
+                "displayName": "Token"
+            },
+            "apiTableUrl": {
+                "type": "SHORT_TEXT",
+                "required": true,
+                "description": "The url of the APITable instance.",
+                "displayName": "APITable Url",
+                "defaultValue": "https://api.apitable.com"
+            }
+        },
+        "required": true,
+        "description": "\n    To obtain your APITable token, follow these steps:\n\n    1. Log in to your ApiTable account.\n    2. Visit https://apitable.com/workbench\n    3. Click on your profile picture (Bottom left).\n    4. Click on \"My Settings\".\n    5. Click on \"Developer\".\n    6. Click on \"Generate new token\".\n    7. Copy the token.\n    ",
+        "displayName": "APITable Token"
+    },
+    "actions": {
+        "apitable_create_record": {
+            "name": "apitable_create_record",
+            "displayName": "Create APITable Record",
+            "description": "Adds a record into an ApiTable datasheet.",
+            "props": {
+                "datasheet": {
+                    "displayName": "Datasheet ID",
+                    "description": "The datasheet to watch for new records, obtain it from the url",
+                    "required": true,
+                    "type": "SHORT_TEXT"
+                },
+                "fields": {
+                    "displayName": "Fields",
+                    "description": "The fields to add to the record.",
+                    "required": true,
+                    "refreshers": [
+                        "auth",
+                        "datasheet"
+                    ],
+                    "type": "DYNAMIC"
+                }
+            },
+            "requireAuth": true,
+            "sampleData": {
+                "code": 200,
+                "success": true,
+                "data": {
+                    "records": [
+                        {
+                            "recordId": "recwFSozTQON7",
+                            "createdAt": 1689774745000,
+                            "updatedAt": 1689774745000,
+                            "fields": {
+                                "Long text": "you still read this?",
+                                "asdasd": "bro?",
+                                "Options": [
+                                    "ok?"
+                                ],
+                                "Title": "mhm"
+                            }
+                        }
+                    ]
+                },
+                "message": "SUCCESS"
+            }
+        },
+        "apitable_update_record": {
+            "name": "apitable_update_record",
+            "displayName": "Update APITable Record",
+            "description": "updates a record in datasheet.",
+            "props": {
+                "datasheet": {
+                    "displayName": "Datasheet ID",
+                    "description": "The datasheet to watch for new records, obtain it from the url",
+                    "required": true,
+                    "type": "SHORT_TEXT"
+                },
+                "recordId": {
+                    "displayName": "Record ID",
+                    "description": "The ID of the record to update.",
+                    "required": true,
+                    "type": "SHORT_TEXT"
+                },
+                "fields": {
+                    "displayName": "Fields",
+                    "description": "The fields to add to the record.",
+                    "required": true,
+                    "refreshers": [
+                        "auth",
+                        "datasheet"
+                    ],
+                    "type": "DYNAMIC"
+                }
+            },
+            "requireAuth": true,
+            "sampleData": {
+                "code": 200,
+                "success": true,
+                "data": {
+                    "records": [
+                        {
+                            "recordId": "recwFSozTQON7",
+                            "createdAt": 1689774745000,
+                            "updatedAt": 1689775686000,
+                            "fields": {
+                                "Long text": "Do people really look at this?",
+                                "asdasd": "hmmm",
+                                "Options": [
+                                    "wow"
+                                ],
+                                "Title": "amazing"
+                            }
+                        }
+                    ]
+                },
+                "message": "SUCCESS"
+            }
+        },
+        "apitable_find_record": {
+            "name": "apitable_find_record",
+            "displayName": "Find APITable Record",
+            "description": "Finds records in datasheet.",
+            "props": {
+                "datasheet": {
+                    "displayName": "Datasheet ID",
+                    "description": "The datasheet to watch for new records, obtain it from the url",
+                    "required": true,
+                    "type": "SHORT_TEXT"
+                },
+                "recordIds": {
+                    "displayName": "Record IDs",
+                    "description": "The IDs of the records to find.",
+                    "required": false,
+                    "type": "ARRAY"
+                },
+                "fieldNames": {
+                    "displayName": "Field Names",
+                    "description": "The returned record results are limited to the specified fields",
+                    "required": false,
+                    "type": "ARRAY"
+                },
+                "maxRecords": {
+                    "displayName": "Max Records",
+                    "description": "How many records are returned in total",
+                    "required": false,
+                    "type": "NUMBER"
+                },
+                "pageSize": {
+                    "displayName": "Page Size",
+                    "description": "How many records are returned per page (max 1000)",
+                    "required": false,
+                    "type": "NUMBER"
+                },
+                "pageNum": {
+                    "displayName": "Page Number",
+                    "description": "Specifies the page number of the page",
+                    "required": false,
+                    "type": "NUMBER"
+                }
+            },
+            "requireAuth": true,
+            "sampleData": {
+                "id": "recoyzj6c0Zekuz4V",
+                "createdTime": "2023-03-15T12:50:33.000Z",
+                "fields": {
+                    "fieldName": "fieldValue"
+                }
+            }
+        }
+    },
+    "triggers": {
+        "new_record": {
+            "name": "new_record",
+            "displayName": "New Record",
+            "description": "Triggers when a new record is added to a datasheet.",
+            "props": {
+                "datasheet": {
+                    "displayName": "Datasheet ID",
+                    "description": "The datasheet to watch for new records, obtain it from the url",
+                    "required": true,
+                    "type": "SHORT_TEXT"
+                }
+            },
+            "type": "POLLING",
+            "sampleData": {
+                "fields": {
+                    "Title": "mhm",
+                    "AmazingField": "You are really looking at this?",
+                    "Long text": "veeeeeeeery long text"
+                },
+                "recordId": "rec2T5ppW1Mal",
+                "createdAt": 1689772153000,
+                "updatedAt": 1689772153000
+            },
+            "requireAuth": true
+        }
+    }
+}

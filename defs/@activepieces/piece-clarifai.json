@@ -1,0 +1,238 @@
+{
+    "id": "7gSL5w16ewXv3uHNjdjZX",
+    "created": "2023-08-25T23:57:08.380Z",
+    "updated": "2023-08-25T23:57:08.380Z",
+    "name": "@activepieces/piece-clarifai",
+    "displayName": "Clarifai",
+    "logoUrl": "https://cdn.activepieces.com/pieces/clarifai.png",
+    "description": "",
+    "projectId": null,
+    "version": "0.2.0",
+    "minimumSupportedRelease": "0.5.0",
+    "maximumSupportedRelease": "99999.99999.9999",
+    "auth": {
+        "type": "SECRET_TEXT",
+        "required": true,
+        "description": "Obtain an API or PAT key from your Clarifai account",
+        "displayName": "API Key"
+    },
+    "actions": {
+        "visual_classifier_model": {
+            "name": "visual_classifier_model",
+            "displayName": "Classify Images or Videos",
+            "description": "Call an visual classifier AI model to recognize concepts",
+            "props": {
+                "modelUrl": {
+                    "description": "URL of the Clarifai model. For example https://clarifai.com/clarifai/main/models/general-image-recognition OR a specific version such as https://clarifai.com/clarifai/main/models/general-image-recognition/versions/aa7f35c01e0642fda5cf400f543e7c40. Find more models at https://clarifai.com/explore/models",
+                    "displayName": "Model URL",
+                    "required": true,
+                    "validators": [
+                        {
+                            "type": "STRING"
+                        }
+                    ],
+                    "type": "SHORT_TEXT"
+                },
+                "file": {
+                    "description": "URL or base64 bytes of the image or video to classify",
+                    "displayName": "Input URL or bytes",
+                    "required": true,
+                    "defaultProcessors": [
+                        null
+                    ],
+                    "defaultValidators": [
+                        {
+                            "type": "FILE"
+                        }
+                    ],
+                    "type": "FILE"
+                }
+            },
+            "requireAuth": true
+        },
+        "text_classifier_model": {
+            "name": "text_classifier_model",
+            "displayName": "Classify Text",
+            "description": "Call a text classifier AI model to recognize concepts",
+            "props": {
+                "modelUrl": {
+                    "description": "URL of the Clarifai model. For example https://clarifai.com/clarifai/main/models/general-image-recognition OR a specific version such as https://clarifai.com/clarifai/main/models/general-image-recognition/versions/aa7f35c01e0642fda5cf400f543e7c40. Find more models at https://clarifai.com/explore/models",
+                    "displayName": "Model URL",
+                    "required": true,
+                    "validators": [
+                        {
+                            "type": "STRING"
+                        }
+                    ],
+                    "type": "SHORT_TEXT"
+                },
+                "txt": {
+                    "description": "Text to classify",
+                    "displayName": "Input Text",
+                    "required": true,
+                    "type": "LONG_TEXT"
+                }
+            },
+            "requireAuth": true
+        },
+        "image_text_model": {
+            "name": "image_text_model",
+            "displayName": "Image to Text",
+            "description": "Call an image to text AI model",
+            "props": {
+                "modelUrl": {
+                    "description": "URL of the Clarifai model. For example https://clarifai.com/clarifai/main/models/general-image-recognition OR a specific version such as https://clarifai.com/clarifai/main/models/general-image-recognition/versions/aa7f35c01e0642fda5cf400f543e7c40. Find more models at https://clarifai.com/explore/models",
+                    "displayName": "Model URL",
+                    "required": true,
+                    "validators": [
+                        {
+                            "type": "STRING"
+                        }
+                    ],
+                    "type": "SHORT_TEXT"
+                },
+                "file": {
+                    "description": "URL or base64 bytes of the image to classify",
+                    "displayName": "Input URL or bytes",
+                    "required": true,
+                    "defaultProcessors": [
+                        null
+                    ],
+                    "defaultValidators": [
+                        {
+                            "type": "FILE"
+                        }
+                    ],
+                    "type": "FILE"
+                }
+            },
+            "requireAuth": true
+        },
+        "text_text_model": {
+            "name": "text_text_model",
+            "displayName": "Text to Text",
+            "description": "Call a text to text AI model",
+            "props": {
+                "modelUrl": {
+                    "description": "URL of the Clarifai model. For example https://clarifai.com/clarifai/main/models/general-image-recognition OR a specific version such as https://clarifai.com/clarifai/main/models/general-image-recognition/versions/aa7f35c01e0642fda5cf400f543e7c40. Find more models at https://clarifai.com/explore/models",
+                    "displayName": "Model URL",
+                    "required": true,
+                    "validators": [
+                        {
+                            "type": "STRING"
+                        }
+                    ],
+                    "type": "SHORT_TEXT"
+                },
+                "txt": {
+                    "description": "Text to classify",
+                    "displayName": "Input Text",
+                    "required": true,
+                    "type": "LONG_TEXT"
+                }
+            },
+            "requireAuth": true
+        },
+        "audio_text_model": {
+            "name": "audio_text_model",
+            "displayName": "Audio to Text",
+            "description": "Call a audio to text AI model",
+            "props": {
+                "modelUrl": {
+                    "description": "URL of the Clarifai model. For example https://clarifai.com/clarifai/main/models/general-image-recognition OR a specific version such as https://clarifai.com/clarifai/main/models/general-image-recognition/versions/aa7f35c01e0642fda5cf400f543e7c40. Find more models at https://clarifai.com/explore/models",
+                    "displayName": "Model URL",
+                    "required": true,
+                    "validators": [
+                        {
+                            "type": "STRING"
+                        }
+                    ],
+                    "type": "SHORT_TEXT"
+                },
+                "file": {
+                    "description": "URL or base64 bytes of the audio to classify",
+                    "displayName": "Input URL or bytes",
+                    "required": true,
+                    "defaultProcessors": [
+                        null
+                    ],
+                    "defaultValidators": [
+                        {
+                            "type": "FILE"
+                        }
+                    ],
+                    "type": "FILE"
+                }
+            },
+            "requireAuth": true
+        },
+        "post_inputs": {
+            "name": "post_inputs",
+            "displayName": "Add Inputs",
+            "description": "Add inputs to your clarifai app",
+            "props": {
+                "userId": {
+                    "description": "User ID to associate with the input",
+                    "displayName": "User ID",
+                    "required": true,
+                    "type": "SHORT_TEXT"
+                },
+                "appId": {
+                    "description": "App ID (project) to associate with the input",
+                    "displayName": "App ID",
+                    "required": true,
+                    "type": "SHORT_TEXT"
+                },
+                "file": {
+                    "description": "URL or base64 bytes of the audio to classify",
+                    "displayName": "Input URL or bytes",
+                    "required": true,
+                    "defaultProcessors": [
+                        null
+                    ],
+                    "defaultValidators": [
+                        {
+                            "type": "FILE"
+                        }
+                    ],
+                    "type": "FILE"
+                }
+            },
+            "requireAuth": true
+        },
+        "workflow_predict": {
+            "name": "workflow_predict",
+            "displayName": "Run Workflow",
+            "description": "Call a Clarifai workflow",
+            "props": {
+                "workflowUrl": {
+                    "description": "URL of the Clarifai workflow. For example https://clarifai.com/clarifai/main/workflows/Demographics. Find more workflows at https://clarifai.com/explore/workflows",
+                    "displayName": "Workflow URL",
+                    "required": true,
+                    "validators": [
+                        {
+                            "type": "STRING"
+                        }
+                    ],
+                    "type": "SHORT_TEXT"
+                },
+                "file": {
+                    "description": "URL or base64 bytes of the incoming image/video/text/audio to run through the workflow. Note: must be appropriate first step of the workflow to handle that data type.",
+                    "displayName": "Input URL or bytes",
+                    "required": true,
+                    "defaultProcessors": [
+                        null
+                    ],
+                    "defaultValidators": [
+                        {
+                            "type": "FILE"
+                        }
+                    ],
+                    "type": "FILE"
+                }
+            },
+            "requireAuth": true
+        }
+    },
+    "triggers": {}
+}
